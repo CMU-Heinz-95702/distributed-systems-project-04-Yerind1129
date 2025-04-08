@@ -3,5 +3,5 @@
         "dockerfile": "Dockerfile"
     },
     "forwardPorts": [8080],
-    "postCreateCommand": "catalina.sh run"
+    "postCreateCommand": "docker build -t tomcat-app . && docker run -d -p 8080:8080 tomcat-app"
 }
