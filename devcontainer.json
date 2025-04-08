@@ -1,8 +1,5 @@
 {
   "name": "Tomcat Server",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "."
-  },
+  "dockerFile": "Dockerfile",
   "forwardPorts": [8080]
 }
